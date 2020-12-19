@@ -1,3 +1,5 @@
+//used recursive dfs 
+
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -37,7 +39,7 @@ class Solution{
         vector<vector<int> > dis = allPathsSourceTarget(graph);
         cout<<"\nDisplaying all "<<dis.size()<<" paths from 0 to "<<(graph.size()-1)<<" :\n";
         for(int i=0;i<dis.size();i++){
-            cout<<"\npath "<<i+1<<" : ";0
+            cout<<"\npath "<<i+1<<" : ";
             for(int j=0;j<dis[i].size();j++){
                 cout<<" --> "<<dis[i][j];
             }
@@ -74,3 +76,9 @@ int main(){
     
     return 0;
 }
+/*
+dfs used to search only works on acyclic diracted graphs 
+
+
+
+*/
